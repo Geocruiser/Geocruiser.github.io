@@ -1,32 +1,31 @@
-# 🌟 Modern Portfolio Website
+# Geocruiser - AI-First Engineer Portfolio
 
-A clean, responsive, and visually appealing portfolio website built with Next.js, TypeScript, and Tailwind CSS. Optimized for GitHub Pages deployment with smooth animations and modern UI components.
+A modern, responsive portfolio website showcasing AI-first engineering projects and expertise. Built with Next.js, TypeScript, and Tailwind CSS.
 
-## ✨ Features
+## 🚀 Features
 
 - **Modern Design**: Clean, professional layout with smooth animations
-- **Fully Responsive**: Works perfectly on desktop, tablet, and mobile devices
-- **Performance Optimized**: Built with Next.js and static export for fast loading
-- **TypeScript**: Type-safe development with excellent developer experience
-- **Tailwind CSS**: Utility-first CSS framework for rapid styling
-- **SEO Friendly**: Optimized metadata and semantic HTML structure
-- **GitHub Pages Ready**: Automated deployment with GitHub Actions
+- **Responsive**: Mobile-first design that works on all devices
+- **Dark/Light Mode**: Toggle between themes with system preference detection
+- **Performance Optimized**: Built with Next.js for optimal loading speeds
+- **AI-First Focus**: Specifically designed to showcase AI/ML projects and expertise
+- **GitHub Pages Ready**: Automated deployment to GitHub Pages
 
-## 🎨 Sections
+## 🛠️ Tech Stack
 
-- **Hero**: Eye-catching introduction with call-to-action buttons
-- **About**: Personal information and core values
-- **Skills**: Technical expertise with proficiency indicators
-- **Projects**: Portfolio showcase with live demos and source code links
-- **Contact**: Contact form and social media links
-- **Footer**: Additional links and copyright information
+- **Framework**: Next.js 14 with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS + Shadcn/ui components
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Deployment**: GitHub Pages with GitHub Actions
 
-## 🚀 Quick Start
+## 🏃‍♂️ Quick Start
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/yourname.github.io.git
-   cd yourname.github.io
+   git clone https://github.com/geocruiser/Geocruiser.github.io.git
+   cd Geocruiser.github.io
    ```
 
 2. **Install dependencies**
@@ -34,96 +33,89 @@ A clean, responsive, and visually appealing portfolio website built with Next.js
    npm install
    ```
 
-3. **Start development server**
+3. **Run development server**
    ```bash
    npm run dev
    ```
 
 4. **Open in browser**
-   Navigate to `http://localhost:3000` to see your portfolio
+   Visit [http://localhost:3000](http://localhost:3000)
 
-## 🛠️ Customization
+## 📝 Customization
 
-### Personal Information
-Update the following files with your information:
+### Projects
+Edit the projects array in `components/projects-section.tsx` to showcase your own projects:
 
-- `src/app/layout.tsx` - Meta information and page title
-- `src/components/sections/HeroSection.tsx` - Name, title, and description
-- `src/components/sections/AboutSection.tsx` - Personal story and highlights
-- `src/components/sections/SkillsSection.tsx` - Technical skills and proficiency
-- `src/components/sections/ProjectsSection.tsx` - Portfolio projects
-- `src/components/sections/ContactSection.tsx` - Contact information
-- `src/components/layout/Footer.tsx` - Social media links
-
-### Styling
-- Modify `tailwind.config.js` to customize colors and animations
-- Update `src/app/globals.css` for global styles
-- Adjust component styles in individual section files
-
-### Content
-- Replace placeholder project information with your actual projects
-- Add your resume/CV file to the `public` directory
-- Update social media links throughout the components
-
-## 📦 Deployment
-
-### GitHub Pages (Recommended)
-
-1. **Enable GitHub Pages**
-   - Go to your repository settings
-   - Navigate to "Pages" section
-   - Set source to "GitHub Actions"
-
-2. **Push to main branch**
-   ```bash
-   git add .
-   git commit -m "Initial portfolio setup"
-   git push origin main
-   ```
-
-3. **Automatic deployment**
-   - GitHub Actions will automatically build and deploy your site
-   - Your portfolio will be available at `https://yourusername.github.io`
-
-### Manual Deployment
-
-```bash
-# Build the static files
-npm run build
-
-# The built files will be in the 'dist' directory
-# Upload these files to your hosting provider
+```typescript
+const projects: Project[] = [
+  {
+    id: "your-project",
+    title: "Your Project Name",
+    description: "Brief description",
+    longDescription: "Detailed description",
+    technologies: ["Tech1", "Tech2"],
+    icon: <YourIcon className="h-6 w-6" />,
+    demoUrl: "https://your-demo.com",
+    githubUrl: "https://github.com/you/project",
+    featured: true
+  }
+]
 ```
 
-## 🎯 Performance
+### Personal Information
+- Update contact details in `components/contact-section.tsx`
+- Modify the hero section in `components/hero-section.tsx`
+- Customize skills and about information in `components/about-section.tsx`
 
-- **Lighthouse Score**: 100/100 across all categories
-- **Static Generation**: Pre-built for maximum performance
-- **Optimized Images**: Automatic image optimization
-- **Minimal Bundle**: Only essential code is shipped
+### Styling
+- Theme colors can be adjusted in `app/globals.css`
+- Component styles use Tailwind CSS classes
+- Additional animations can be added using Framer Motion
 
-## 🔧 Scripts
+## 🚀 Deployment
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run start` - Start production server
-- `npm run lint` - Run ESLint
+The site automatically deploys to GitHub Pages when you push to the main branch. Make sure to:
+
+1. Enable GitHub Pages in your repository settings
+2. Set the source to "GitHub Actions"
+3. The workflow in `.github/workflows/deploy.yml` handles the rest
+
+## 📁 Project Structure
+
+```
+├── app/                    # Next.js app directory
+│   ├── globals.css        # Global styles and CSS variables
+│   ├── layout.tsx         # Root layout component
+│   └── page.tsx           # Main page component
+├── components/            # React components
+│   ├── ui/               # Reusable UI components
+│   ├── navigation.tsx    # Navigation bar
+│   ├── hero-section.tsx  # Hero/landing section
+│   ├── about-section.tsx # About section
+│   ├── projects-section.tsx # Projects showcase
+│   └── contact-section.tsx # Contact section
+├── lib/                  # Utility functions
+│   └── utils.ts         # Helper functions
+└── public/              # Static assets
+```
+
+## 🎨 Design Philosophy
+
+This portfolio follows modern design principles:
+- **Minimalist**: Clean, uncluttered interface
+- **Professional**: Suitable for business and technical audiences
+- **Accessible**: High contrast ratios and semantic HTML
+- **Performance**: Optimized images and efficient code
+- **AI-Focused**: Specifically tailored for AI/ML professionals
 
 ## 🤝 Contributing
 
-Feel free to fork this repository and customize it for your own portfolio. If you make improvements that could benefit others, pull requests are welcome!
+Feel free to submit issues and enhancement requests! This template is designed to be easily customizable and extensible.
 
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 🙏 Acknowledgments
-
-- Built with [Next.js](https://nextjs.org/)
-- Styled with [Tailwind CSS](https://tailwindcss.com/)
-- Icons from [Lucide React](https://lucide.dev/)
-- Deployed on [GitHub Pages](https://pages.github.com/)
-
 ---
 
-Made with ❤️ and lots of ☕
+Built with ❤️ by Geocruiser | Powered by Next.js and GitHub Pages
