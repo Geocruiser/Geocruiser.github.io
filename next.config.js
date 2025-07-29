@@ -5,8 +5,7 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/Geocruiser.github.io' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/Geocruiser.github.io/' : '',
+  // No basePath or assetPrefix needed for User Pages (username.github.io)
 }
 
 module.exports = nextConfig 
