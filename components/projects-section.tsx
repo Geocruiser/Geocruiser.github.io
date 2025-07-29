@@ -208,7 +208,7 @@ export function ProjectsSection() {
       id: "plantesite-game-engine",
       title: "Plantesite - Advanced Godot Game Development",
       description: "Sophisticated game project with hybrid pathfinding algorithms and multiplayer systems",
-      longDescription: "A complex game development project built with Godot Engine featuring advanced hybrid pathfinding implementation, comprehensive multiplayer architecture, and phased development approach. Includes custom AI algorithms, tileset systems, and sound integration with detailed technical documentation and modular scene management.",
+      longDescription: "(Video Pending)A complex game development project built with Godot Engine featuring advanced hybrid pathfinding implementation, comprehensive multiplayer architecture, and phased development approach. Includes custom AI algorithms, tileset systems, and sound integration with detailed technical documentation and modular scene management.",
       technologies: ["Godot Engine", "GDScript", "AI Pathfinding", "Multiplayer", "Game Design", "Sound Systems"],
       icon: <Cpu className="h-6 w-6" />,
       demoUrl: "#",
