@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import { motion } from "framer-motion"
-import { ExternalLink, Github, Brain, Zap, Database, Bot, Cpu, Play } from "lucide-react"
+import { ExternalLink, Github, Edit, Smartphone, Monitor, Plane, Gamepad2, Play } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 
@@ -166,7 +166,7 @@ export function ProjectsSection() {
       description: "Comprehensive AI-powered writing platform with real-time suggestions and analytics",
       longDescription: "A sophisticated writing assistant designed for students featuring real-time AI suggestions, document management, version history, and progress analytics. Integrates OpenAI GPT-3.5-turbo with intelligent fallback systems and supports multiple user types from ESL learners to graduate students.",
       technologies: ["TypeScript", "React 18", "OpenAI GPT-3.5", "Zustand", "Tailwind CSS", "Vite"],
-      icon: <Brain className="h-6 w-6" />,
+      icon: <Edit className="h-6 w-6" />,
       videoUrl: "https://www.loom.com/embed/4bd034f70c38435d843ca33c3298ebb2?sid=58b5541b-c1ae-4ad4-9dc0-8cb3402bc39d",
       featured: true
     },
@@ -176,7 +176,7 @@ export function ProjectsSection() {
       description: "React Native mobile app with RAG AI recommendations and real-time video sharing",
       longDescription: "A production-ready mobile platform combining social video sharing with advanced AI recommendations. Features custom RAG pipeline, vector embeddings for semantic search, real-time social interactions, and comprehensive performance optimizations. Built for book enthusiasts to share and discover content through intelligent AI-driven recommendations.",
       technologies: ["React Native", "TypeScript", "OpenAI GPT-4", "Supabase", "RAG Pipeline", "Vector Embeddings"],
-      icon: <Zap className="h-6 w-6" />,
+      icon: <Smartphone className="h-6 w-6" />,
       demoUrl: "#",
       videoUrl: "https://www.loom.com/embed/141b8b3b114646fc942e5586fd033612?sid=22e5081e-0a83-4b18-bc04-f8eb2757169d", // Placeholder - replace with actual video
       featured: true
@@ -187,7 +187,7 @@ export function ProjectsSection() {
       description: "Electron-based desktop application with modern React frontend and database integration",
       longDescription: "A sophisticated cross-platform desktop application built with Electron, featuring a modern React frontend, TypeScript for type safety, and Prisma ORM for database management. Combines the power of web technologies with native desktop capabilities for a seamless user experience across Windows, macOS, and Linux.",
       technologies: ["Electron", "React", "TypeScript", "Prisma ORM", "Vite", "Tailwind CSS"],
-      icon: <Database className="h-6 w-6" />,
+      icon: <Monitor className="h-6 w-6" />,
       demoUrl: "#",
       videoUrl: "https://www.loom.com/embed/c6387e47cb9846868e81aec3ac15fdac?sid=f1ddc963-5a4f-445b-8a22-e5f3214a3f6f", // Placeholder - replace with actual video
       featured: true
@@ -198,7 +198,7 @@ export function ProjectsSection() {
       description: "Enterprise-grade travel platform with AI orchestration and comprehensive fallback systems",
       longDescription: "A sophisticated AI-powered travel planning platform featuring Langflow orchestration, multi-API integration with Amadeus and OpenAI, comprehensive fallback systems, and browser automation. Built with Next.js 15, featuring monorepo architecture, mock API development system, and production-ready containerized deployment with comprehensive testing and CI/CD.",
       technologies: ["Next.js 15", "TypeScript", "Langflow", "OpenAI", "Amadeus API", "Docker"],
-      icon: <Bot className="h-6 w-6" />,
+      icon: <Plane className="h-6 w-6" />,
       demoUrl: "#",
       githubUrl: "https://github.com/Gauntlet-AI/TravelAgentic",
       videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", // Placeholder - replace with actual video
@@ -210,7 +210,7 @@ export function ProjectsSection() {
       description: "Sophisticated game project with hybrid pathfinding algorithms and multiplayer systems",
       longDescription: "A complex game development project built with Godot Engine featuring advanced hybrid pathfinding implementation, comprehensive multiplayer architecture, and phased development approach. Includes custom AI algorithms, tileset systems, and sound integration with detailed technical documentation and modular scene management.",
       technologies: ["Godot Engine", "GDScript", "AI Pathfinding", "Multiplayer", "Game Design", "Sound Systems"],
-      icon: <Cpu className="h-6 w-6" />,
+      icon: <Gamepad2 className="h-6 w-6" />,
       demoUrl: "#",
       videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", // Placeholder - replace with actual video
       featured: true
