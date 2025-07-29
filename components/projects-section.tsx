@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import { motion } from "framer-motion"
-import { ExternalLink, Github, Edit, Smartphone, Monitor, Plane, Gamepad2, Play } from "lucide-react"
+import { ExternalLink, Github, Edit, Smartphone, Monitor, Plane, Gamepad2, Building2, Play } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 
@@ -196,7 +196,7 @@ export function ProjectsSection() {
       id: "travelagentic-ai-platform",
       title: "TravelAgentic - AI Travel Planning Platform",
       description: "Enterprise-grade travel platform with AI orchestration and comprehensive fallback systems",
-      longDescription: "A sophisticated AI-powered travel planning platform featuring Langflow orchestration, multi-API integration with Amadeus and OpenAI, comprehensive fallback systems, and browser automation. Built with Next.js 15, featuring monorepo architecture, mock API development system, and production-ready containerized deployment with comprehensive testing and CI/CD.",
+      longDescription: "(Video Pending)A sophisticated AI-powered travel planning platform featuring Langflow orchestration, multi-API integration with Amadeus and OpenAI, comprehensive fallback systems, and browser automation. Built with Next.js 15, featuring monorepo architecture, mock API development system, and production-ready containerized deployment with comprehensive testing and CI/CD.",
       technologies: ["Next.js 15", "TypeScript", "Langflow", "OpenAI", "Amadeus API", "Docker"],
       icon: <Plane className="h-6 w-6" />,
       demoUrl: "#",
@@ -208,11 +208,22 @@ export function ProjectsSection() {
       id: "plantesite-game-engine",
       title: "Plantesite - Advanced Godot Game Development",
       description: "Sophisticated game project with hybrid pathfinding algorithms and multiplayer systems",
-      longDescription: "A complex game development project built with Godot Engine featuring advanced hybrid pathfinding implementation, comprehensive multiplayer architecture, and phased development approach. Includes custom AI algorithms, tileset systems, and sound integration with detailed technical documentation and modular scene management.",
+      longDescription: "(Video Pending)A complex game development project built with Godot Engine featuring advanced hybrid pathfinding implementation, comprehensive multiplayer architecture, and phased development approach. Includes custom AI algorithms, tileset systems, and sound integration with detailed technical documentation and modular scene management.",
       technologies: ["Godot Engine", "GDScript", "AI Pathfinding", "Multiplayer", "Game Design", "Sound Systems"],
       icon: <Gamepad2 className="h-6 w-6" />,
       demoUrl: "#",
       videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", // Placeholder - replace with actual video
+      featured: true
+    },
+    {
+      id: "plone-research-universities",
+      title: "Plone CMS - Research University Features",
+      description: "Legacy enterprise CMS contributions with advanced institutional features for research universities",
+      longDescription: "Strategic contributions to the Plone open-source CMS platform, focusing on developing specialized features for research universities. Enhanced the legacy Python/Zope codebase with custom content types, workflow integrations, and ORCID integration for faculty and researchers. Improved user experience for faculty, researchers, and administrative staff while maintaining backward compatibility with existing institutional systems.",
+      technologies: ["Python", "Plone CMS", "Zope", "JavaScript", "XML", "PostgreSQL"],
+      icon: <Building2 className="h-6 w-6" />,
+      demoUrl: "#",
+      videoUrl: "https://www.loom.com/embed/0653d952db2c419eae6f736d99a4c4a0?sid=12867e7a-6e8f-45bd-9846-ab737b294d13", // Placeholder - replace with actual video
       featured: true
     }
   ]
