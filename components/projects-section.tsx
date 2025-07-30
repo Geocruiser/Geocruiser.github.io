@@ -212,7 +212,7 @@ export function ProjectsSection() {
       technologies: ["Godot Engine", "GDScript", "AI Pathfinding", "Multiplayer", "Game Design", "Sound Systems"],
       icon: <Gamepad2 className="h-6 w-6" />,
       demoUrl: "#",
-      videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", // Placeholder - replace with actual video
+      videoUrl: "https://www.loom.com/embed/57a24cdc20f74cc7a0879ce9b20240b7?sid=33776b6b-76b9-4627-96e9-dcaab1922339", // Placeholder - replace with actual video
       featured: true
     },
     {
