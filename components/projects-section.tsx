@@ -196,12 +196,12 @@ export function ProjectsSection() {
       id: "travelagentic-ai-platform",
       title: "TravelAgentic - AI Travel Planning Platform",
       description: "Enterprise-grade travel platform with AI orchestration and comprehensive fallback systems",
-      longDescription: "(Video Pending)A sophisticated AI-powered travel planning platform featuring Langflow orchestration, multi-API integration with Amadeus and OpenAI, comprehensive fallback systems, and browser automation. Built with Next.js 15, featuring monorepo architecture, mock API development system, and production-ready containerized deployment with comprehensive testing and CI/CD.",
+      longDescription: "A sophisticated AI-powered travel planning platform featuring Langflow orchestration, multi-API integration with Amadeus and OpenAI, comprehensive fallback systems, and browser automation. Built with Next.js 15, featuring monorepo architecture, mock API development system, and production-ready containerized deployment with comprehensive testing and CI/CD.",
       technologies: ["Next.js 15", "TypeScript", "Langflow", "OpenAI", "Amadeus API", "Docker"],
       icon: <Plane className="h-6 w-6" />,
       demoUrl: "#",
       githubUrl: "https://github.com/Gauntlet-AI/TravelAgentic",
-      videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", // Placeholder - replace with actual video
+      videoUrl: "https://www.loom.com/embed/10bc9baafb754d8f82c421217c87eba2?sid=d30b0ad3-adb4-4c78-af56-f2b683ec92ae", // Placeholder - replace with actual video
       featured: false
     },
     {
