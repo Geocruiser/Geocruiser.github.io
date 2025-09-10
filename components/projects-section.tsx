@@ -226,6 +226,54 @@ export function ProjectsSection() {
       videoUrl: "https://www.loom.com/embed/0653d952db2c419eae6f736d99a4c4a0?sid=12867e7a-6e8f-45bd-9846-ab737b294d13", // Placeholder - replace with actual video
       featured: true
     }
+    ,
+    {
+      id: "edsis-edfi-opensis-integration",
+      title: "Edsis - Ed‑Fi + OpenSIS Integration",
+      description: "Next.js frontend with EDSIS API and sync worker integrating Ed‑Fi ODS.",
+      longDescription: "A production‑ready integration that marries the Ed‑Fi ODS/API (v5.2) with an OpenSIS‑style Next.js frontend. Includes an EDSIS BFF that aggregates Ed‑Fi and OpenSIS Postgres caches, plus a TypeScript sync worker for initial backfill and incremental Change Queries. Built with Drizzle ORM and PostgreSQL, authenticated via NextAuth (JWT) in the UI and OAuth2 client‑credentials to Ed‑Fi. Dockerized for local development and deployable to AWS (ECS Fargate, RDS, ALB), with S3‑compatible object storage support for files.",
+      technologies: ["Next.js 15", "TypeScript", "React 19", "Tailwind CSS 4", "Drizzle ORM", "PostgreSQL", "NextAuth", "Docker"],
+      icon: <Building2 className="h-6 w-6" />,
+      demoUrl: "#",
+      videoUrl: "https://www.loom.com/embed/ec9aab55928c4b379d00101edc428445?sid=b4373a4a-d68c-4d70-874e-926b328b8a7c",
+      featured: true
+    }
+    ,
+    {
+      id: "machine-vision-microservice",
+      title: "Machine Vision Microservice",
+      description: "FastAPI microservice for DETR-based object detection with similarity search.",
+      longDescription: "Production‑ready, containerized image analysis service exposing REST endpoints for detection, visualization, and vector similarity. Uses Facebook DETR ResNet‑101 via Transformers and PyTorch, with FAISS‑backed search over 256‑dim embeddings. Ships with comprehensive tests, Docker image with model pre‑caching, and performance validation for reliable ops.",
+      technologies: ["Python", "FastAPI", "PyTorch", "Transformers", "DETR ResNet‑101", "FAISS", "Docker", "Pytest"],
+      icon: <Monitor className="h-6 w-6" />,
+      demoUrl: "#",
+      videoUrl: "https://www.loom.com/embed/38d01d12d745481a9adffcd964c3a3df?sid=85229f6b-8207-4849-b890-0905c4048a15",
+      featured: true
+    }
+    ,
+    {
+      id: "mp-up-matcher",
+      title: "MP‑UP Matcher",
+      description: "Full‑stack TS platform matching missing to unidentified persons with review UI.",
+      longDescription: "Monorepo with Next.js frontend and Express/Prisma backend that matches missing persons to unidentified remains using composable scorers (demographic, geographic, temporal, optional image). Features SSE progress, LLM‑powered explanations, and optional GPU ML microservices (InsightFace, CLIP). Includes production Docker stack with Nginx, Postgres/Redis, Prometheus/Grafana, and ELK.",
+      technologies: ["Next.js 14", "React 18", "TypeScript", "Tailwind CSS", "Express", "Prisma", "PostgreSQL", "Redis", "Zod", "TanStack Query", "Docker"],
+      icon: <Building2 className="h-6 w-6" />,
+      demoUrl: "#",
+      videoUrl: "https://www.loom.com/embed/38449f21f2354802821a3b3cb7f98a7f?sid=95092622-1a58-46a8-889e-dd1fd380fc61",
+      featured: true
+    }
+    ,
+    {
+      id: "avqe-assessment-engine",
+      title: "AVQE",
+      description: "AI‑assisted assessment audit and variant generation with reviewer workflow.",
+      longDescription: "Next.js application that ingests lesson content, audits items via GPT‑4o function‑calling, and generates vetted alternates. Provides a reviewer UI (queue, diff, WYSIWYG, accept/edit/reject) and bulk CSV/JSONL export. Built on Postgres with pgvector and pg‑boss, Supabase auth, and robust scripts, tests, and E2E flows.",
+      technologies: ["Next.js 15", "React 19", "TypeScript", "Tailwind CSS 4", "PostgreSQL", "pgvector", "pg-boss", "OpenAI", "Supabase", "Zod", "Pino", "Vitest", "Playwright"],
+      icon: <Edit className="h-6 w-6" />,
+      demoUrl: "#",
+      videoUrl: "https://www.loom.com/embed/67816f6f557b48dead0281b79faf6e0a?sid=26ea7911-39af-4ea7-ade2-977cd4d58bdc",
+      featured: true
+    }
   ]
 
   return (
